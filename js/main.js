@@ -1,3 +1,8 @@
+//preloader
+window.addEventListener('load', () => {
+    document.querySelector('.preloader').remove();
+});
+
 const images = [
     'img1.jpg',
     'img2.jpg',
@@ -21,7 +26,6 @@ const imgContainer = document.querySelector('#img-container');
 
 // active menu icon;
 const menuIcons = document.querySelectorAll('.menu-icon i');
-
 menuIcons.forEach((icon) => {
     icon.addEventListener('click', () => {
         menuIcons.forEach((icon) => icon.classList.remove('active'));
