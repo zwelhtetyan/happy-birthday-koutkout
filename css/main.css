@@ -106,7 +106,6 @@ body {
 }
 
 .home .home-bg-layer {
-  background-image: url("../assets/Bubble-Background.svg");
   width: calc(100vw - 5em);
   height: 100%;
   position: fixed;
@@ -123,6 +122,7 @@ body {
 .home .hbd {
   font-size: 7em;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 768px) {
