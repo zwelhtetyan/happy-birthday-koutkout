@@ -106,6 +106,7 @@ body {
 }
 
 .home .home-bg-layer {
+  background-image: url("../assets/Bubble-Background.svg");
   width: calc(100vw - 5em);
   height: 100%;
   position: fixed;
