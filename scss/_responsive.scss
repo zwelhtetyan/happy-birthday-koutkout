@@ -9,4 +9,9 @@
             @content;
         }
     }
+    @if ($breakPoint == 'smallDevice') {
+        @media screen and (max-width: 320px) {
+            @content;
+        }
+    }
 }
