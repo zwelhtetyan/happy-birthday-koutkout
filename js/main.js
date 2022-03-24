@@ -18,3 +18,13 @@ const images = [
 ];
 
 const imgContainer = document.querySelector('#img-container');
+
+// active menu icon;
+const menuIcons = document.querySelectorAll('.menu-icon i');
+
+menuIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+        menuIcons.forEach((icon) => icon.classList.remove('active'));
+        icon.classList.add('active');
+    });
+});
