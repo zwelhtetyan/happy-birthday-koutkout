@@ -41,6 +41,7 @@ logo.addEventListener('click', () => (giftContainer.style.display = 'flex'));
 //open the box
 const box = document.querySelector('.gift-box');
 const giftTxt = document.querySelector('.gift-txt');
+const animateLayer = document.querySelector('.animate-layer');
 
 box.addEventListener('click', () => {
     box.src = './assets/gift-cake.png';
@@ -48,6 +49,10 @@ box.addEventListener('click', () => {
         'This cake is for you <span style="font-style: normal;">🤍</span>';
     giftTxt.classList.remove('animate-active');
     giftTxt.style.color = '#3adfc1';
+    animateLayer.style.display = 'block';
+    setTimeout(() => {
+        animateLayer.classList.add('animate-layer-off');
+    }, 300);
 });
 
 //back arrow
