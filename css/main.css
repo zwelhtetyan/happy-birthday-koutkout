@@ -184,6 +184,7 @@ body {
   top: 0;
   left: 0;
   background-color: #161c2a;
+  background-size: cover;
   z-index: 3;
   display: none;
   -webkit-box-orient: vertical;

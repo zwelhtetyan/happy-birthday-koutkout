@@ -36,7 +36,7 @@ menuIcons.forEach((icon) => {
 const giftContainer = document.querySelector('.gift-container');
 
 const logo = document.querySelector('.logo');
-logo.addEventListener('click', () => [(giftContainer.style.display = 'flex')]);
+logo.addEventListener('click', () => (giftContainer.style.display = 'flex'));
 
 //open the box
 const box = document.querySelector('.gift-box');
