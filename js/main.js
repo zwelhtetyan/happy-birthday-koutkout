@@ -22,13 +22,36 @@ const images = [
     'img16.jpeg',
 ];
 
-const imgContainer = document.querySelector('#img-container');
-
 // active menu icon;
 const menuIcons = document.querySelectorAll('.menu-icon i');
+
 menuIcons.forEach((icon) => {
     icon.addEventListener('click', () => {
         menuIcons.forEach((icon) => icon.classList.remove('active'));
         icon.classList.add('active');
     });
+});
+
+//logo
+const giftContainer = document.querySelector('.gift-container');
+
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => [(giftContainer.style.display = 'flex')]);
+
+//open the box
+const box = document.querySelector('.gift-box');
+const giftTxt = document.querySelector('.gift-txt');
+
+box.addEventListener('click', () => {
+    box.src = './assets/gift-cake.png';
+    giftTxt.innerHTML =
+        'This cake is for you <span style="font-style: normal;">🤍</span>';
+    giftTxt.classList.remove('animate-active');
+    giftTxt.style.color = '#3adfc1';
+});
+
+//back arrow
+const backArrow = document.querySelector('.back-arrow');
+backArrow.addEventListener('click', () => {
+    giftContainer.style.display = 'none';
 });

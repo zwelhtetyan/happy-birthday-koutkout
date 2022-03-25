@@ -1,0 +1,47 @@
+.gift-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: $main-background;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .gift-box {
+        width: 280px;
+    }
+    .gift-txt {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 900;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    .animate-active {
+        animation: animateText 0.5s infinite alternate linear;
+    }
+
+    @keyframes animateText {
+        0% {
+            color: transparent;
+        }
+        100% {
+            color: $active-color;
+        }
+    }
+    .back-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        i {
+            font-size: 3em;
+            color: $active-color;
+        }
+    }
+}
