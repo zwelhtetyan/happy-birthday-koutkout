@@ -39,6 +39,7 @@ menuIcons.forEach((icon) => {
             viewImageLayer.style.transform = 'scale(0)';
         }
         icon.classList.add('active');
+        imgCollection.classList.remove('show-imgCollection');
         if (e.target.classList.contains('home-icon')) {
             const home = document.getElementById('home');
             home.style.display = 'flex';
@@ -48,6 +49,9 @@ menuIcons.forEach((icon) => {
         } else if (e.target.classList.contains('gallery-icon')) {
             const gallery = document.getElementById('gallery');
             gallery.style.display = 'block';
+            setTimeout(() => {
+                imgCollection.classList.add('show-imgCollection');
+            }, 10);
             if (window.innerWidth < 480) {
                 sideMenu.style.borderTop = '1px solid #4f546299';
             }
@@ -148,6 +152,7 @@ const wishes = [
     'You are very special and you deserve the best. I wish you a wonderful life filled with love and happiness. Happy Birthday.',
 ];
 
+//display wishes
 const wishesCollection = document.querySelector('.wishes-collection');
 wishes.forEach((wish) => {
     wishesCollection.innerHTML += `
@@ -157,3 +162,17 @@ wishes.forEach((wish) => {
                     </div>
                 </div>`;
 });
+
+//animate wish-card-containers
+const wishCardContainers = document.querySelectorAll('.wish-card-container');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        entry.target.classList.toggle(
+            'show-wish-card-container',
+            entry.isIntersecting
+        );
+        // if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+});
+
+wishCardContainers.forEach((img) => observer.observe(img));

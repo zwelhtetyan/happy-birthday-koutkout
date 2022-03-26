@@ -505,6 +505,11 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 @media screen and (max-width: 768px) {
@@ -526,15 +531,21 @@ html {
 .gallery .img-collection .img-container img {
   width: 90%;
   border-radius: 3px;
-  -webkit-transition: 0.3s all ease-in;
-  transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in !important;
+  transition: 0.3s all ease-in !important;
 }
 
 .gallery .img-collection .img-container img:hover {
   -webkit-filter: drop-shadow(0px 5px 4px #3adfc1);
           filter: drop-shadow(0px 5px 4px #3adfc1);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-2px) !important;
+          transform: translateY(-2px) !important;
+}
+
+.gallery .show-imgCollection {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .gallery .view-img-layer {
@@ -596,6 +607,10 @@ html {
 
 .wishes .wishes-collection .wish-card-container {
   margin-bottom: 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 .wishes .wishes-collection .wish-card-container .wish-card {
@@ -625,5 +640,10 @@ html {
 
 .wishes .wishes-collection .wish-card-container .wish-txt {
   color: #000000;
+}
+
+.wishes .wishes-collection .show-wish-card-container {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=main.css.map */

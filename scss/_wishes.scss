@@ -8,6 +8,8 @@
 
         .wish-card-container {
             margin-bottom: 10px;
+            transform: scale(0);
+            transition: $transition1;
             .wish-card {
                 display: flex;
                 align-items: center;
@@ -26,6 +28,9 @@
             .wish-txt {
                 color: $black;
             }
+        }
+        .show-wish-card-container {
+            transform: scale(1);
         }
     }
 }
