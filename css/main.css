@@ -70,6 +70,7 @@ html {
 
 @media screen and (max-width: 768px) {
   #side-menu {
+    border-right: 0;
     width: 100%;
     height: 3.5em !important;
     top: calc(100vh - 3.5em);
@@ -363,6 +364,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .home .home-bg-layer {
@@ -505,7 +507,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .gallery .img-collection {
-    padding-bottom: 2.5em;
+    padding-bottom: 3.5em;
   }
 }
 
@@ -577,5 +579,44 @@ html {
   .gallery .view-img-layer .view-img {
     width: 80%;
   }
+}
+
+.wishes {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .wishes .wishes-collection {
+    padding-bottom: 3.5em;
+  }
+}
+
+.wishes .wishes-collection .wish-card-container .wish-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #3fc9b6;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px 10px 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .wishes .wishes-collection .wish-card-container .wish-card {
+    width: 90%;
+  }
+}
+
+.wishes .wishes-collection .wish-card-container .wish-txt {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

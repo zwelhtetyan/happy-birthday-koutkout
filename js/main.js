@@ -23,21 +23,37 @@ const images = [
 ];
 
 // active menu icon;
+const sideMenu = document.querySelector('.side-menu');
 const menuIcons = document.querySelectorAll('.menu-icon i');
 const contents = document.querySelectorAll('.content');
 
 menuIcons.forEach((icon) => {
     icon.addEventListener('click', (e) => {
         menuIcons.forEach((icon) => icon.classList.remove('active'));
-        contents.forEach((content) => (content.style.display = 'none'));
+        contents.forEach((content) => {
+            content.style.display = 'none';
+            logo.style.display = 'flex';
+        });
         icon.classList.add('active');
         if (e.target.classList.contains('home-icon')) {
             const home = document.getElementById('home');
             home.style.display = 'flex';
+            if (window.innerWidth < 480) {
+                sideMenu.style.border = 'none';
+            }
         } else if (e.target.classList.contains('gallery-icon')) {
             const gallery = document.getElementById('gallery');
             gallery.style.display = 'block';
+            if (window.innerWidth < 480) {
+                sideMenu.style.borderTop = '1px solid #4f546299';
+            }
         } else {
+            const wishes = document.getElementById('wishes');
+            wishes.style.display = 'block';
+            if (window.innerWidth < 480) {
+                logo.style.display = 'none';
+                sideMenu.style.borderTop = '1px solid #4f546299';
+            }
         }
     });
 });
@@ -109,8 +125,27 @@ koutImg.forEach((img) => {
     });
 });
 
+// cancel view image
 viewImageLayer.addEventListener('click', (e) => {
     if (e.target.classList.contains('view-img')) return;
     viewImageLayer.style.transform = 'scale(0)';
     overlayLayer.classList.remove('open-overlay');
+});
+
+//wishes collection
+const wishes = [
+    'Happy Birthday my angel. I wish I could write across the sky so that everyone could see it.',
+    'I hope your birthday is as beautiful and full of love as you are.',
+    'The moon and the stars are not enough to express my love for you. Have a wonderful birthday.',
+    'You are the reason I smile every day. Our passion will never go away, and our love will shine brightest on this special day. ',
+];
+
+const wishesCollection = document.querySelector('.wishes-collection');
+wishes.forEach((wish) => {
+    wishesCollection.innerHTML += `
+                    <div class="wish-card-container col-md-6 col-xl-4 mb-4">
+                    <div class="wish-card">
+                        <p class="m-0 wish-txt">${wish}</p>
+                    </div>
+                </div>`;
 });
