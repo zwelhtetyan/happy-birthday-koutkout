@@ -44,10 +44,17 @@ const giftTxt = document.querySelector('.gift-txt');
 const animateLayer = document.querySelector('.animate-layer');
 
 box.addEventListener('click', () => {
-    box.src = './assets/gift-cake.png';
+    box.src = './assets/gift-cake1.png';
     giftTxt.innerHTML =
         'This cake is for you <span style="font-style: normal;">🤍</span>';
     giftTxt.classList.remove('animate-active');
+    giftTxt.style.opacity = '0';
+    giftContainer.style.backgroundImage = 'url(../assets/bg1.svg)';
+    setTimeout(() => {
+        giftTxt.style.opacity = '1';
+        giftTxt.classList.add('animate__animated', 'animate__shakeX');
+        giftTxt.style.animationDelay = '.5s';
+    }, 1300);
     giftTxt.style.color = '#3adfc1';
     animateLayer.style.display = 'block';
     setTimeout(() => {
