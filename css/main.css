@@ -218,6 +218,7 @@ body {
 
 .gift-container .gift-box {
   width: 280px;
+  cursor: pointer;
 }
 
 .gift-container .gift-txt {
