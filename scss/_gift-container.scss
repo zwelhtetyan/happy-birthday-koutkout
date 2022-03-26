@@ -28,6 +28,16 @@
     .gift-box {
         width: 280px;
         cursor: pointer;
+        animation: animateGiftBox 1s ease-in-out alternate infinite;
+    }
+
+    @keyframes animateGiftBox {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
     }
     .gift-txt {
         text-align: center;

@@ -21,6 +21,10 @@
         font-size: 6em;
         text-transform: uppercase;
         font-weight: 900;
+        background-image: linear-gradient(to bottom, $white, $active-color 85%);
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         @include responsive('tablet') {
             font-size: 5em;
         }
@@ -37,6 +41,9 @@
         font-family: 'Padauk', sans-serif;
         font-style: italic;
         font-weight: 900;
+        background-image: linear-gradient($active-color, $white 75%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         @include responsive('tablet') {
             font-size: 4em;
         }

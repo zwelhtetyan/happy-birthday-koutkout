@@ -279,6 +279,30 @@ html {
 .gift-container .gift-box {
   width: 280px;
   cursor: pointer;
+  -webkit-animation: animateGiftBox 1s ease-in-out alternate infinite;
+          animation: animateGiftBox 1s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes animateGiftBox {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes animateGiftBox {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
 }
 
 .gift-container .gift-txt {
@@ -363,6 +387,11 @@ html {
   font-size: 6em;
   text-transform: uppercase;
   font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(85%, #3adfc1));
+  background-image: linear-gradient(to bottom, #fff, #3adfc1 85%);
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width: 768px) {
@@ -389,6 +418,10 @@ html {
   font-family: 'Padauk', sans-serif;
   font-style: italic;
   font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3adfc1), color-stop(75%, #fff));
+  background-image: linear-gradient(#3adfc1, #fff 75%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width: 768px) {
