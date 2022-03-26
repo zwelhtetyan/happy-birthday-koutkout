@@ -1,0 +1,15 @@
+.overlay-layer {
+    width: 100%;
+    height: 100vh;
+    background-color: $overlay-color;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+}
+.open-overlay {
+    opacity: 1;
+    visibility: visible;
+}

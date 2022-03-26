@@ -1,0 +1,11 @@
+.main-container {
+    width: calc(100vw - 5em);
+    height: 100vh;
+    margin-left: 5em;
+    padding: 0 0.5em;
+    @include responsive('tablet') {
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+    }
+}
