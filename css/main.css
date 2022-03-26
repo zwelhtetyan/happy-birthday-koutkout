@@ -594,6 +594,10 @@ html {
   }
 }
 
+.wishes .wishes-collection .wish-card-container {
+  margin-bottom: 15px;
+}
+
 .wishes .wishes-collection .wish-card-container .wish-card {
   display: -webkit-box;
   display: -ms-flexbox;

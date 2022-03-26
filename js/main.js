@@ -151,7 +151,7 @@ const wishes = [
 const wishesCollection = document.querySelector('.wishes-collection');
 wishes.forEach((wish) => {
     wishesCollection.innerHTML += `
-                    <div class="wish-card-container col-md-6 col-xl-4 mb-4">
+                    <div class="wish-card-container col-md-6 col-xl-4">
                     <div class="wish-card">
                         <p class="m-0 wish-txt">${wish}</p>
                     </div>
