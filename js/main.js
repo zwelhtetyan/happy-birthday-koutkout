@@ -49,7 +49,7 @@ box.addEventListener('click', () => {
         'This cake is for you <span style="font-style: normal;">🤍</span>';
     giftTxt.classList.remove('animate-active');
     giftTxt.style.opacity = '0';
-    giftContainer.style.backgroundImage = 'url(../assets/bg1.svg)';
+    giftContainer.style.background = 'url(../assets/bg1.svg)';
     setTimeout(() => {
         giftTxt.style.opacity = '1';
         giftTxt.classList.add('animate__animated', 'animate__shakeX');
