@@ -229,8 +229,8 @@ html {
   opacity: 0;
   visibility: hidden;
   z-index: 1;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 .open-overlay {
@@ -280,6 +280,9 @@ html {
 .gift-container .gift-box {
   width: 280px;
   cursor: pointer;
+}
+
+.gift-container .animate-gift-box {
   -webkit-animation: animateGiftBox 1s ease-in-out alternate infinite;
           animation: animateGiftBox 1s ease-in-out alternate infinite;
 }
@@ -364,7 +367,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
 }
 
 .home .home-bg-layer {
@@ -524,8 +526,8 @@ html {
 .gallery .img-collection .img-container img {
   width: 90%;
   border-radius: 3px;
-  -webkit-transition: 0.2s all ease-in;
-  transition: 0.2s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 .gallery .img-collection .img-container img:hover {
@@ -582,6 +584,7 @@ html {
 }
 
 .wishes {
+  display: none;
   height: 100vh;
 }
 
@@ -603,7 +606,7 @@ html {
           justify-content: center;
   width: 100%;
   height: 100%;
-  background: #3fc9b6;
+  background-color: #3adfc1;
   border-top-left-radius: 37px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -617,6 +620,6 @@ html {
 }
 
 .wishes .wishes-collection .wish-card-container .wish-txt {
-  color: black;
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */

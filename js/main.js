@@ -34,6 +34,10 @@ menuIcons.forEach((icon) => {
             content.style.display = 'none';
             logo.style.display = 'flex';
         });
+        if (overlayLayer.classList.contains('open-overlay')) {
+            overlayLayer.classList.remove('open-overlay');
+            viewImageLayer.style.transform = 'scale(0)';
+        }
         icon.classList.add('active');
         if (e.target.classList.contains('home-icon')) {
             const home = document.getElementById('home');
@@ -74,6 +78,7 @@ box.addEventListener('click', () => {
     if (box.classList.contains('open-box')) return;
     box.src = './assets/gift-cake1.png';
     box.classList.add('open-box');
+    box.classList.remove('animate-gift-box');
     giftTxt.innerHTML =
         'This cake is for you <span style="font-style: normal;">🤍</span>';
     giftTxt.classList.remove('animate-active');
@@ -135,9 +140,12 @@ viewImageLayer.addEventListener('click', (e) => {
 //wishes collection
 const wishes = [
     'Happy Birthday my angel. I wish I could write across the sky so that everyone could see it.',
+    'The universe may turn upside down, but you will always be the prettiest girl in town. Happy birthday my love.',
     'I hope your birthday is as beautiful and full of love as you are.',
     'The moon and the stars are not enough to express my love for you. Have a wonderful birthday.',
     'You are the reason I smile every day. Our passion will never go away, and our love will shine brightest on this special day. ',
+    'All our memories together will never be taken away, no matter how old we get and how many birthdays pass by, I will always be here for you. Happy birthday.',
+    'You are very special and you deserve the best. I wish you a wonderful life filled with love and happiness. Happy Birthday.',
 ];
 
 const wishesCollection = document.querySelector('.wishes-collection');
