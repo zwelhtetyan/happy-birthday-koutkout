@@ -16,19 +16,29 @@ const images = [
     'img10.jpeg',
     'img11.jpeg',
     'img8.jpeg',
-    'img9.jpg',
     'img14.jpeg',
     'img15.jpeg',
     'img16.jpeg',
+    'img9.jpg',
 ];
 
 // active menu icon;
 const menuIcons = document.querySelectorAll('.menu-icon i');
+const contents = document.querySelectorAll('.content');
 
 menuIcons.forEach((icon) => {
-    icon.addEventListener('click', () => {
+    icon.addEventListener('click', (e) => {
         menuIcons.forEach((icon) => icon.classList.remove('active'));
+        contents.forEach((content) => (content.style.display = 'none'));
         icon.classList.add('active');
+        if (e.target.classList.contains('home-icon')) {
+            const home = document.getElementById('home');
+            home.style.display = 'flex';
+        } else if (e.target.classList.contains('gallery-icon')) {
+            const gallery = document.getElementById('gallery');
+            gallery.style.display = 'block';
+        } else {
+        }
     });
 });
 
@@ -97,4 +107,10 @@ koutImg.forEach((img) => {
         viewImageLayer.style.transform = 'scale(1)';
         overlayLayer.classList.add('open-overlay');
     });
+});
+
+viewImageLayer.addEventListener('click', (e) => {
+    if (e.target.classList.contains('view-img')) return;
+    viewImageLayer.style.transform = 'scale(0)';
+    overlayLayer.classList.remove('open-overlay');
 });
