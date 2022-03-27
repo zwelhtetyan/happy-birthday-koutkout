@@ -158,23 +158,23 @@ viewImageLayer.addEventListener('click', (e) => {
 
 //wishes collection
 const wishesByEnglish = [
-    'Happy Birthday my angel. I wish I could write across the sky so that everyone could see it.',
-    'The universe may turn upside down, but you will always be the prettiest girl in town. Happy birthday my love.',
-    'I hope your birthday is as beautiful and full of love as you are.',
+    'I hope your birthday is as beautiful and full of love as you are.❤️',
     'The moon and the stars are not enough to express my love for you. Have a wonderful birthday.',
-    'You are the reason I smile every day. Our passion will never go away, and our love will shine brightest on this special day.',
-    'All our memories together will never be taken away, no matter how old we get and how many birthdays pass by, I will always be here for you. Happy birthday.',
+    'All our memories together will never be taken away, no matter how old we get and how many birthdays pass by, I will always be here for you.❤️',
     'You are very special and you deserve the best. I wish you a wonderful life filled with love and happiness. Happy Birthday.',
+    'Happy Birthday my angel. I wish I could write across the sky so that everyone could see it.',
+    'The universe may turn upside down, but you will always be the prettiest girl in the world. Happy birthday my love.❤️',
+    'You are the reason I smile every day. Our passion will never go away, and our love will shine brightest on this special day.',
 ];
 
 const wishesByBurmese = [
-    'Happy Birthday my angel. လူတိုင်းမြင်နိုင်အောင် ကောင်းကင်တခွင်မှာ ရေးစေချင်ပါတယ်။',
-    'စကြာဝဠာကြီး ဇောက်ထိုးပြောင်းသွားနိုင်တယ် ဒါပေမယ့် မင်းအမြဲတမ်း မြို့ထဲမှာ အလှပဆုံးမိန်းကလေးဖြစ်လိမ့်မယ်။ မွေးနေ့မှာ ပျော်ရွှင်ပါစေ ချစ်သူ',
-    'မင်းရဲ့မွေးနေ့ဟာ မင်းလိုပဲ လှပပြီး ချစ်ခြင်းမေတ္တာတွေ ပြည့်ဝပါစေလို့ မျှော်လင့်ပါတယ်။',
-    'လနဲ့ ကြယ်လေးတွေက မင်းကိုချစ်တယ်ဆိုတာ ဖော်ပြဖို့ မလုံလောက်ပါဘူး။ ပျော်စရာကောင်းတဲ့ မွေးနေ့လေးဖြစ်ပါစေ',
-    'မင်းဟာ ငါ နေ့တိုင်း ပြုံးနေတဲ့ အကြောင်းပြချက်ပဲ။ ကျွန်ုပ်တို့၏ ဝါသနာသည် ဘယ်သောအခါမှ ပျောက်ကွယ်သွားလိမ့်မည်မဟုတ်ပါ၊ ကျွန်ုပ်တို့၏အချစ်များသည် ဤထူးခြားသောနေ့တွင် အတောက်ပဆုံးဖြစ်လိမ့်မည်',
-    'ငါတို့နှစ်ယောက်ရဲ့ အမှတ်တရတွေအားလုံးဟာ ဘယ်တော့မှ ပျောက်ကွယ်သွားတော့မှာမဟုတ်ဘူး၊ ငါတို့အသက်ဘယ်လောက်ပဲရှိရှိ မွေးနေ့တွေ ဘယ်လောက်ပဲဖြတ်သန်းသွားပါစေ ငါမင်းအတွက်အမြဲရှိနေမှာပါ။ ပျော်ရွှင်စရာမွေးနေ့ဖြစ်ပါစေ',
-    'သင်သည် အလွန်ထူးခြားပြီး အကောင်းဆုံးနှင့် ထိုက်တန်ပါသည်။ ချစ်ခြင်းမေတ္တာတွေနဲ့ ပြည့်စုံပြီး ပျော်ရွှင်စရာကောင်းတဲ့ ဘဝလေးကို ပိုင်ဆိုင်နိုင်ပါစေလို့ ဆုတောင်းပေးလိုက်ပါတယ်။ ပျော်ရွှင်စရာမွေးနေ့ဖြစ်ပါစေ',
+    'မင်းရဲ့မွေးနေ့ဟာ မင်းလိုပဲ လှပပြီး ချစ်ခြင်းမေတ္တာတွေ ပြည့်ဝပါစေလို့ မျှော်လင့်ပါတယ်။❤️',
+    'လနဲ့ ကြယ်လေးတွေက မင်းကိုချစ်တယ်ဆိုတာ ဖော်ပြဖို့ မလုံလောက်ပါဘူး။ ပျော်စရာကောင်းတဲ့ မွေးနေ့လေးဖြစ်ပါစေ။',
+    'ငါတို့နှစ်ယောက်ရဲ့ အမှတ်တရတွေအားလုံးဟာ ဘယ်တော့မှ ပျောက်ကွယ်သွားမှာမဟုတ်ဘူး၊ ငါတို့အသက်ဘယ်လောက်ပဲရှိရှိ မွေးနေ့တွေ ဘယ်လောက်ပဲဖြတ်သန်းသွားပါစေ ငါမင်းအတွက်အမြဲရှိနေမှာပါ။',
+    'မင်းက အလွန်ထူးခြားပြီး အကောင်းဆုံးနှင့် ထိုက်တန်ပါတယ်။ ချစ်ခြင်းမေတ္တာတွေနဲ့ ပြည့်စုံပြီး ပျော်ရွှင်စရာကောင်းတဲ့ ဘဝလေးကို ပိုင်ဆိုင်နိုင်ပါစေလို့ ဆုတောင်းပေးလိုက်ပါတယ်။ ပျော်ရွှင်စရာမွေးနေ့ဖြစ်ပါစေ။',
+    'ပျော်ရွှင်စရာမွေးနေ့လေးဖြစ်ပါစေ ကောင်မလေးရေ လူတိုင်းမြင်နိုင်အောင် ကောင်းကင်တခွင်မှာ ရေးလိုက်ချင်ပါတယ်။',
+    'စကြာဝဠာကြီး ဇောက်ထိုးပြောင်းသွားနိုင်တယ် ဒါပေမယ့် မင်းကအမြဲတမ်း ကမ္ဘာပေါ်မှာ အလှဆုံးကောင်မလေး ဖြစ်နေဦးမှာပါ။ မွေးနေ့မှာ ပျော်ရွှင်ပါစေ ကောက်ရေ။❤️',
+    'မင်းက ငါ နေ့တိုင်း ပြုံးနေတဲ့ အကြောင်းပြချက်ပဲ။ ငါတို့ရဲစိတ်တွေ ဘယ်တော့မှပြောင်းလဲသွားမှာ မဟုတ်ဘူ၊ ငါတို့ရဲ့ အချစ်တွေလဲ ဒီနေ့မှာ အတောက်ပဆုံးပါပဲ။',
 ];
 
 // switch language
