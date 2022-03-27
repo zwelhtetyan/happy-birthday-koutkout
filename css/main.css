@@ -19,7 +19,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 5px;
 }
 
 /* Track */
@@ -77,12 +77,55 @@ html {
   }
 }
 
+#side-menu .language {
+  width: 60px;
+  height: 26px;
+  padding: 0 4px;
+  background: #4f5462f7;
+  border-radius: 15px;
+  position: absolute;
+  top: 7em;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#side-menu .language .flag {
+  width: 26px;
+  position: absolute;
+  left: 2px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+#side-menu .language .language-type {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  #side-menu .language {
+    position: fixed;
+    top: 10px;
+    left: unset;
+    right: 10px;
+  }
+}
+
 #side-menu .logo {
   width: 55px;
   height: 55px;
   position: absolute;
   left: 12.5px;
-  top: 60px;
+  top: 30px;
   border-radius: 50%;
   border: 3px solid;
   padding: 3px;

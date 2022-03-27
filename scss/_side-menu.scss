@@ -14,12 +14,45 @@
         top: calc(100vh - 3.5em);
     }
 
+    .language {
+        width: 60px;
+        height: 26px;
+        padding: 0 4px;
+        background: $switch-background;
+        border-radius: 15px;
+        position: absolute;
+        top: 7em;
+        left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .flag {
+            width: 26px;
+            position: absolute;
+            left: 2px;
+            transition: $transition1;
+        }
+        .language-type {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        @include responsive('tablet') {
+            // display: none;
+            position: fixed;
+            top: 10px;
+            left: unset;
+            right: 10px;
+        }
+    }
+
     .logo {
         width: 55px;
         height: 55px;
         position: absolute;
         left: 12.5px;
-        top: 60px;
+        top: 30px;
         border-radius: 50%;
         border: 3px solid;
         padding: 3px;
